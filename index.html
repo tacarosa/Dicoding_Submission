@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg" sizes="16x16">
+    <title>Edukasi New Normal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='assets/css/stylesheet.css'>
+    <link rel='stylesheet' href='assets/css/animation.css'>
+    <script src='assets/js/main.js'></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar-container">
+            <div class="navbar-brand">
+                <img class="logo" src="assets/img/logo.svg">
+            </div>
+            <div class="dropdown-menu" id="dropdown">
+                <a href="#" class="nav-button" onclick="scrollToElement('beranda')">Beranda</a>
+                <a href="#" class="nav-button" onclick="scrollToElement('informasi')">Informasi</a>
+                <a href="#" class="nav-button" onclick="scrollToElement('kontak')">Kontak Kami</a>
+            </div>
+            <a href="#" class="dropdown-icon" onclick="dropdownClick()">
+                <img src="assets/img/menu.svg"/>
+            </a>
+        </nav>
+    </header>
+    
+    <div class="landingpage" id="beranda">
+        <div class="landingpage-hero-text">
+            <h1>Selamat Datang di Website Edukasi Kebiasaan Baru.</h1>
+            <p>Patuhi protokol kesehatan di Era Kebiasaan Baru untuk mencegah penyebaran virus COVID-19 semakin
+                meluas.</p>
+            <button class="btn-see-more" onclick="scrollToElement('informasi')">
+                Mulai Pelajari.
+            </button>
+        </div>
+        <div class="landingpage-hero-icon">
+            <img src="assets/img/good.png" />
+            <img src="assets/img/virus.png" class="floating left"/>
+            <img src="assets/img/virus.png" class="floating right"/>
+            <img src="assets/img/virus.png" class="floating bottom"/>
+        </div>
+    </div>
+
+    <main id="informasi">
+        <aside class="content-top-biodata">
+            <div>
+                <h2>Biodata</h2>
+                <h3>Nama</h3>
+                <p>Taca Rosa</p>
+                <h3>Email</h3>
+                <p>taca.rosa.taca@gmail.com</p>
+                <h3>No. Hp</h3>
+                <p>081274050521</p>
+            </div>
+        </aside>
+
+        <div id="content">
+            <article class="content-top-paragraf">
+                <h2>Apa itu Covid -19 ?</h2>
+                <p>
+                    Coronavirus Disease 2019 (COVID-19) adalah penyakit menular yang disebabkan
+                    oleh Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2). Tanda dan gejala umum infeksi
+                    COVID-19 antara lain gejala gangguan pernapasan akut seperti demam, batuk dan
+                    sesak napas. Masa inkubasi rata-rata 5-6 hari dengan masa inkubasi terpanjang 14 hari.<br />
+                    <a href="https://www.covid19.go.id/" target="_blank">Baca selengakapnya.</a>
+                </p>
+            </article>
+
+            <article class="content-top-additional">
+                <h1>Cegah Penyebaran COVID-19 dengan
+                    Patuhi Protokol Kesehatan</h1>
+                <div class="content-items">
+
+                    <div class="card-small">
+                        <img src="assets/img/social-distancing.svg" alt="" />
+                        <p>Jaga jarak dan jauhi kerumunan</p>
+                    </div>
+                    <div class="card-small">
+                        <img src="assets/img/face-mask.svg" alt="" />
+                        <p>Gunakan masker saat berpergian.</p>
+                    </div>
+                    <div class="card-small">
+                        <img src="assets/img/water.svg" alt="" />
+                        <p>Rajin cuci tangan sesaat akan atau sehabis berpergian</p>
+                    </div>
+                    <div class="card-small">
+                        <img src="assets/img/cleaning.svg" alt="" />
+                        <p>Jaga kebersihan diri dan lingkungan sekitar</p>
+                    </div>
+                    <div class="card-small">
+                        <img src="assets/img/insurance.svg" alt="" />
+                        <p>Perkuat imun tubuh dengan makanan sehat dan berolahraga</p>
+                    </div>
+
+                </div>
+            </article>
+
+            <article class="content-item" id="articlesatu">
+                <div class="content-teks">
+                    <h1>Cuci Tangan yang Tepat</h1>
+                    <p>
+                        Cuci tangan dilakukan dengan menggosokkan tangan menggunakan cairan antiseptik atau dengan air
+                        mengalir dan sabun antiseptik. Lakukan kegiatan cuci tangan sesaat akan hendak berpergian maupun
+                        setalah berpergian, sebelum dan sesudah makan atau sehabis memegang benda di tempat umum.
+                    </p>
+                </div>
+                <img src="assets/img/cucitangan.png" alt="photo" class="content-image ml" />
+            </article>
+
+            <article class="content-item" id="dua">
+                <img src="assets/img/gejala.png" alt="photo" class="content-image visible" />
+                <div class="content-teks">
+                    <h1>Gejala Virus COVID-19</h1>
+                    <p>
+                        Jika anda mengalami gajala klinis sperti demam, batuk, pilek, letih, lesu, sakit tenggorokan
+                        ataupun gangguan (sesak) pernapasan segera lakukan pemeriksaan medis ke rumah sakit rujukan yang
+                        berada di kota anda.<br />
+                        <a href="https://covid19.go.id/daftar-rumah-sakit-rujukan" target="_blank">Klik disini</a>
+                        untuk melihat daftar rumah sakit rujukan di kota anda.
+                    </p>
+                </div>
+                <img src="assets/img/gejala.png" alt="photo" class="content-image invisible" />
+            </article>
+
+            <article class="content-item" id="articletiga">
+                <div class="content-teks">
+                    <h1>Penularan Virus COVID-19</h1>
+                    <p>
+                        Kemungkinan prose penularan virus Covid-19 melalui kontak langsung dengan penderita, tetesan,
+                        udara, fomite, fecal-oral, darah, ibu-ke-anak, dan penularan dari hewan ke manusia. Sementara
+                        itu, terdapat beberapa orang yang terinfeksi virus namun tidak pernah mengalami gejala atau
+                        orang tanpa gejala (OTG).
+                    </p>
+                </div>
+                <img src="assets/img/penularan.jpg" alt="photo" class="content-image ml" />
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="footer" id="kontak">
+        <a href="https://api.whatsapp.com/send?phone=6281212430900" target="_blank" class="footer-link">
+            <img src="assets/img/whatsapp.svg" />
+            <p>+62 812 1243 0900</p>
+        </a>
+        <a href="https://mail.google.com/" target="_blank" class="footer-link">
+            <img src="assets/img/gmail.svg" />
+            <p>taca.rosa.taca@gmail.com</p>
+        </a>
+        <p>Created by Taca Rosa</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,395 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-container {
+    background-color: #5C7BE7;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+    padding: 0 5vw;
+    width: 100%;
+}
+
+.navbar-brand .logo {
+    height: 70px;
+}
+
+.navbar-items {
+    display: flex;
+    align-items: center;
+}
+
+.nav-button {
+    background-color: #88B8FF;
+    color: #FFFFFF;
+    width: 135px;
+    text-align: center;
+    border-radius: 10rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.6s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0 5px;
+}
+
+.nav-button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #88B8FF;
+    border-radius: 10rem;
+    z-index: -2;
+}
+
+.nav-button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #6b9de7;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.nav-button:hover:before {
+    width: 100%;
+}
+
+.dropdown-menu {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 80px;
+    top: 0;
+    width: 100vw;
+    left: 0;
+    padding: 0 5vw;
+    display: none;
+    transition: all 1s;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu .nav-button{
+    display: block;
+    margin: 10px 0;
+}
+
+.dropdown-icon img{
+    width: 40px;
+}
+
+.dropdown-icon {
+    display: none;
+}
+
+.landingpage {
+    margin-top: 80px;
+    min-height: calc(100vh - 80px);
+    background-color: #EAEEFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6vw;
+}
+
+.landingpage-hero-text {
+    flex-basis: 50%;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.landingpage-hero-icon {
+    flex-basis: 50%;
+    position: relative;
+}
+
+.landingpage-hero-icon img {
+    width: 100%;
+}
+
+.floating {
+    position: absolute;
+    animation: floatanimation 5s infinite ease-in-out;
+}
+
+.floating.left{
+    left: 0;
+    width: 15% !important;
+    margin-top: -20px;
+    animation-delay: -2s;
+}
+
+.floating.right{
+    right: 0;
+    width: 15% !important;
+}
+
+.floating.bottom{
+    bottom: 10px;
+    right: 50px;
+    width: 10% !important;
+    animation-delay: -4s;
+}
+
+.landingpage-hero-text h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.landingpage-hero-text p {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+main {
+    position: relative;
+}
+
+#content {
+    background-color: #FFFFFF;
+    padding: 4vw 0;
+}
+
+.content-top-paragraf a, .content-teks a {
+    color: #4a9ae4;
+}
+
+.content-top-paragraf {
+    width: calc(100% - 300px);
+    font-size: 20px;
+    min-height: 400px;
+    padding: 0 6vw 2vw;
+}
+
+.content-top-biodata {
+    background-image: url(../img/profil.jpeg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFFFF;
+    width: 250px;
+    height: 433px;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 6vw;
+    padding: 10px;
+}
+
+.content-top-biodata h2 {
+    width: 100%;
+    margin-bottom: 130px;
+    background-color: #ffffff79;
+}
+
+.content-top-biodata * {
+    margin: 0;
+}
+
+.content-top-additional {
+    text-align: center;
+    background-color: #EAEEFF;
+    padding: 50px 8vw;
+    margin-bottom: 8vw;
+}
+
+.content-top-additional h1 {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.content-items {
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.card-small {
+    padding: 10px;
+    flex-basis: 20%;
+}
+
+.card-small img {
+    width: 70%;
+}
+
+.content-item-top h1 {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.content-item {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin-bottom: 150px;
+    padding: 0 6vw;
+}
+
+.content-item h1 {
+    font-size: 30px;
+}
+
+.content-image {
+    width: 35vw;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.content-teks p {
+    line-height: 24px;
+    font-size: 20px;
+}
+
+#dua .content-teks, #empat .content-teks {
+    padding-left: 10vw;
+}
+
+.ml {
+    margin-left: 10vw;
+}
+
+.content-image:hover {
+    transform: scale(1.01);
+}
+
+.btn-see-more {
+    background-color: #4AC7E4;
+    color: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    padding: 15px 30px;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+
+.btn-see-more:active, .btn-see-more:focus {
+    outline: none;
+}
+
+.btn-see-more:hover {
+    opacity: 1;
+}
+
+.invisible {
+    display: none;
+}
+
+.footer {
+    background-color: #5C7BE7;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.footer-link p {
+    margin: 5px 0;
+}
+
+.footer-link img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width:768px) {
+    .content-item {
+        grid-template-columns: auto;
+        margin-bottom: 80px;
+    }
+    .content-image {
+        width: 75vw;
+        margin: 20px auto;
+    }
+    #dua .content-teks, #empat .content-teks {
+        padding-left: 0;
+    }
+    #dua .content-image.visible, #empat .content-image.visible {
+        display: none;
+    }
+    #dua .content-image.invisible, #empat .content-image.invisible {
+        display: block;
+    }
+    .dropdown-icon {
+        display: block;
+    }
+    .landingpage {
+        flex-direction: column;
+    }
+    .landingpage-hero-icon {
+        margin-top: 50px;
+    }
+    #content {
+        padding: 4vw 0 400px;
+    }
+    .content-top-biodata {
+        bottom: 0;
+        width: 88%;
+        height: 350px;
+        margin-bottom: 50px;
+    }
+    .content-top-paragraf {
+        width: 100%;
+    }
+    .content-items {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .content-top-additional {
+        padding: 50px 6vw;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .content-item {
+        margin-bottom: 50px;
+    }
+    .navbar-brand .logo {
+        height: 50px;
+    }
+    .landingpage h1, .content-teks h1, .content-top-paragraf h2{
+        font-size: 25px;
+    }
+    .landingpage p, .content-teks p, .content-top-paragraf p{
+        font-size: 18px;
+    }
+}
